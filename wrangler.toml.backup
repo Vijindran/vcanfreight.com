@@ -1,0 +1,24 @@
+name = "vcanfreight"
+compatibility_date = "2024-01-01"
+pages_build_output_dir = ".next"
+
+[env.production]
+routes = [
+  { pattern = "vcanfreight.com", zone_name = "vcanfreight.com" },
+  { pattern = "www.vcanfreight.com", zone_name = "vcanfreight.com" }
+]
+
+# D1 Database binding
+[[d1_databases]]
+binding = "DB"
+database_name = "vcanfreight-db"
+database_id = "19de061f-5e36-4c13-838f-1a0aa7bc85df"
+
+# Environment variables
+[vars]
+DOMAIN = "vcanfreight.com"
+SEARATES_PLATFORM_ID = "29979"
+SEARATES_API_KEY = "K-21EB16AA-B6A6-4D41-9365-5882597F9B11"
+# Optional: Add your AviationStack API key for airfreight schedules
+# AVIATION_STACK_API_KEY = "your_api_key_here"
+
