@@ -19,6 +19,7 @@ database_id = "19de061f-5e36-4c13-838f-1a0aa7bc85df"
 DOMAIN = "vcanfreight.com"
 SEARATES_PLATFORM_ID = "29979"
 SEARATES_API_KEY = "K-21EB16AA-B6A6-4D41-9365-5882597F9B11"
+STRIPE_PUBLISHABLE_KEY = "pk_live_51RnhihPyJngwy6BVLwZJgd4zc7zKG81iDKAxlDvpRGwTseb2a3WyJt0Y3UjfudtDwaTBe5nzXuxFotCJIv8DxGd200bA5njECb"
 # Optional: Add your AviationStack API key for airfreight schedules
 # AVIATION_STACK_API_KEY = "your_api_key_here"
 
