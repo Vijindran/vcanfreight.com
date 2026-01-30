@@ -1,0 +1,250 @@
+{
+  "app": {
+    "title": "VCANFreight",
+    "description": "Logística Global Simplificada",
+    "tagline": "Logística Global, Simplificada"
+  },
+  "common": {
+    "getStarted": "Comenzar",
+    "logIn": "Iniciar Sesión",
+    "register": "Registrarse",
+    "continue": "Continuar",
+    "cancel": "Cancelar",
+    "save": "Guardar",
+    "delete": "Eliminar",
+    "edit": "Editar",
+    "back": "Atrás",
+    "next": "Siguiente",
+    "previous": "Anterior",
+    "submit": "Enviar",
+    "search": "Buscar",
+    "filter": "Filtrar",
+    "close": "Cerrar",
+    "loading": "Cargando...",
+    "error": "Error",
+    "success": "Éxito",
+    "confirm": "Confirmar",
+    "yes": "Sí",
+    "no": "No"
+  },
+  "auth": {
+    "welcomeBack": "Bienvenido de Nuevo",
+    "createAccount": "Crear Cuenta",
+    "signInDetails": "Por favor ingrese sus datos para iniciar sesión.",
+    "joinUs": "Únase a nosotros para comenzar a enviar globalmente.",
+    "email": "Dirección de Correo",
+    "password": "Contraseña",
+    "fullName": "Nombre Completo",
+    "forgotPassword": "¿Olvidó su Contraseña?",
+    "continueAsGuest": "Continuar como Invitado",
+    "continueWith": "O continuar con",
+    "loggingIn": "Iniciando sesión...",
+    "creatingAccount": "Creando cuenta...",
+    "termsAgreement": "Al iniciar sesión, acepta nuestros",
+    "termsOfService": "Términos de Servicio",
+    "privacyPolicy": "Política de Privacidad",
+    "and": "y"
+  },
+  "dashboard": {
+    "title": "Panel de Control",
+    "goodMorning": "Buenos días",
+    "goodAfternoon": "Buenas tardes",
+    "goodEvening": "Buenas noches",
+    "whatsHappening": "Esto es lo que está pasando con su carga hoy.",
+    "actionRequired": "Acción Requerida",
+    "shipmentsRequireReview": "Envíos requieren revisión de documentación antes de la llegada.",
+    "reviewNow": "Revisar Ahora",
+    "active": "Activo",
+    "quotes": "Cotizaciones",
+    "delivered": "Entregado",
+    "quickActions": "Acciones Rápidas",
+    "newBooking": "Nueva Reserva",
+    "trackShipment": "Rastrear Envío",
+    "getQuote": "Obtener Cotización",
+    "activeShipments": "Envíos Activos",
+    "viewAll": "Ver Todo",
+    "recentQuotes": "Cotizaciones Recientes",
+    "bookNow": "Reservar Ahora",
+    "expiresIn": "Expira en",
+    "onTime": "A Tiempo",
+    "arrivingIn": "Llegando en",
+    "days": "días"
+  },
+  "booking": {
+    "title": "Nueva Reserva",
+    "selectShippingType": "Seleccionar tipo de envío",
+    "selectShippingDescription": "Elija la opción que mejor se adapte al volumen de su carga y requisitos de entrega.",
+    "fcl": {
+      "title": "Contenedor Completo",
+      "short": "FCL",
+      "description": "Uso exclusivo de un contenedor. Ideal para envíos grandes (más de 15 CBM) o mercancías frágiles que necesitan seguridad.",
+      "booking": "Reserva FCL"
+    },
+    "lcl": {
+      "title": "Menos que Contenedor Completo",
+      "short": "LCL",
+      "description": "Comparta espacio de contenedor con otros. Rentable para envíos más pequeños.",
+      "booking": "Reserva LCL"
+    },
+    "airfreight": {
+      "title": "Carga Aérea",
+      "short": "Aéreo",
+      "description": "Método de envío más rápido. Ideal para entregas urgentes.",
+      "booking": "Reserva de Carga Aérea"
+    },
+    "routeDetails": "Detalles de Ruta",
+    "origin": "Puerto / Ciudad de Origen",
+    "destination": "Puerto / Ciudad de Destino",
+    "readyDate": "Fecha Estimada de Listo",
+    "containerType": "Tipo de Contenedor",
+    "quantity": "Cantidad",
+    "cargoInfo": "Información de Carga",
+    "commodity": "Nombre de Mercancía",
+    "weight": "Peso Total",
+    "hsCode": {
+      "title": "Código HS",
+      "placeholder": "Auto-detectado o ingrese manualmente",
+      "suggestions": "Sugerencias de Código HS",
+      "highConfidence": "Alta",
+      "mediumConfidence": "Media",
+      "lowConfidence": "Baja",
+      "noSuggestions": "No se encontraron sugerencias. Por favor ingrese el código HS manualmente.",
+      "enterMoreDetails": "Ingrese al menos 3 caracteres para obtener sugerencias de código HS"
+    },
+    "hsCodeOptional": "Opcional",
+    "instructions": "Instrucciones de Manejo Especial",
+    "continueToRates": "Continuar a Tarifas",
+    "step": "Paso",
+    "of": "de",
+    "notSure": "¿No está seguro cuál elegir? Contacte Soporte"
+  },
+  "navigation": {
+    "home": "Inicio",
+    "dashboard": "Panel de Control",
+    "search": "Buscar",
+    "schedules": "Horarios",
+    "bookings": "Reservas",
+    "messages": "Mensajes",
+    "more": "Más",
+    "settings": "Configuración",
+    "language": "Idioma",
+    "theme": "Tema"
+  },
+  "settings": {
+    "title": "Configuración",
+    "language": "Idioma",
+    "theme": "Tema",
+    "notifications": "Notificaciones",
+    "profile": "Perfil",
+    "account": "Cuenta",
+    "privacy": "Privacidad",
+    "about": "Acerca de",
+    "help": "Ayuda y Soporte",
+    "logout": "Cerrar Sesión",
+    "supportPhone": "Teléfono de Soporte",
+    "emergencyPhone": "Línea de Emergencia",
+    "supportEmail": "Email de Soporte",
+    "terms": "Términos y Política de Privacidad"
+  },
+  "language": {
+    "title": "Idioma",
+    "selectLanguage": "Seleccionar Idioma",
+    "searchPlaceholder": "Buscar idiomas",
+    "auto": "Automático (Sistema)",
+    "changingLanguage": "Cambiar el idioma reiniciará la aplicación para aplicar la configuración.",
+    "allLanguages": "Todos los Idiomas"
+  },
+  "theme": {
+    "light": "Modo Claro",
+    "dark": "Modo Oscuro",
+    "system": "Predeterminado del Sistema"
+  },
+  "notifications": {
+    "title": "Notificaciones",
+    "noNotifications": "Sin notificaciones",
+    "markAllRead": "Marcar todo como leído"
+  },
+  "messages": {
+    "title": "Mensajes",
+    "noMessages": "Sin mensajes",
+    "sendMessage": "Enviar Mensaje",
+    "typeMessage": "Escriba un mensaje..."
+  },
+  "chat": {
+    "support": "Soporte",
+    "online": "En línea",
+    "welcomeMessage": "¡Hola! ¿Cómo podemos ayudarte hoy?",
+    "autoResponse": "Gracias por tu mensaje. Nuestro equipo de soporte se pondrá en contacto contigo pronto. Para asistencia inmediata, llámanos al +1 (251) 316-6847 o +44 7476 991927.",
+    "callUs": "Llámanos",
+    "emailUs": "Envíanos un Email"
+  },
+  "profile": {
+    "title": "Perfil",
+    "editProfile": "Editar Perfil",
+    "name": "Nombre",
+    "email": "Correo",
+    "phone": "Teléfono",
+    "company": "Empresa",
+    "address": "Dirección"
+  },
+  "errors": {
+    "generic": "Algo salió mal. Por favor intente de nuevo.",
+    "network": "Error de red. Por favor verifique su conexión.",
+    "unauthorized": "No autorizado. Por favor inicie sesión.",
+    "notFound": "No encontrado.",
+    "validation": "Por favor verifique su entrada e intente de nuevo."
+  },
+  "success": {
+    "bookingCreated": "¡Reserva Enviada!",
+    "bookingProcessing": "Su envío está siendo procesado.",
+    "profileUpdated": "Perfil actualizado exitosamente",
+    "settingsSaved": "Configuración guardada exitosamente"
+  },
+  "container": {
+    "types": {
+      "20ft": "20ft Estándar",
+      "40ft": "40ft Estándar",
+      "40ftHC": "40ft HC",
+      "capacity": "Capacidad"
+    }
+  },
+  "units": {
+    "kg": "kg",
+    "lbs": "lbs",
+    "cbm": "CBM",
+    "ft": "ft"
+  },
+  "time": {
+    "today": "Hoy",
+    "yesterday": "Ayer",
+    "tomorrow": "Mañana",
+    "daysAgo": "hace días",
+    "hoursAgo": "hace horas",
+    "minutesAgo": "hace minutos"
+  },
+  "schedules": {
+    "title": "Horarios",
+    "sea": "Flete Marítimo",
+    "air": "Carga Aérea",
+    "searchTitle": "Buscar Horarios",
+    "origin": "Origen",
+    "destination": "Destino",
+    "originPlaceholder": "ej. Shanghai",
+    "destinationPlaceholder": "ej. Los Angeles",
+    "search": "Buscar",
+    "departure": "Salida",
+    "arrival": "Llegada",
+    "transitTime": "Tiempo de Tránsito",
+    "frequency": "Frecuencia",
+    "days": "días",
+    "bookNow": "Reservar Ahora",
+    "noResults": "No se Encontraron Horarios",
+    "searchHint": "Busque horarios ingresando origen y destino",
+    "status": {
+      "available": "Disponible",
+      "full": "Completo",
+      "delayed": "Retrasado"
+    }
+  }
+}
+

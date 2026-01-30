@@ -23,3 +23,6 @@ STRIPE_PUBLISHABLE_KEY = "pk_live_51RnhihPyJngwy6BVLwZJgd4zc7zKG81iDKAxlDvpRGwTs
 # Optional: Add your AviationStack API key for airfreight schedules
 # AVIATION_STACK_API_KEY = "your_api_key_here"
 
+# Stripe Secret Key (must be set via 'wrangler secret put STRIPE_SECRET_KEY' or environment variable)
+# This is injected at deployment time for security
+

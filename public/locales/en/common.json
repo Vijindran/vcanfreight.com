@@ -1,0 +1,252 @@
+{
+  "app": {
+    "title": "VCANFreight",
+    "description": "Global Logistics Simplified",
+    "tagline": "Global Logistics, Simplified"
+  },
+  "common": {
+    "getStarted": "Get Started",
+    "logIn": "Log In",
+    "register": "Register",
+    "continue": "Continue",
+    "cancel": "Cancel",
+    "save": "Save",
+    "delete": "Delete",
+    "edit": "Edit",
+    "back": "Back",
+    "next": "Next",
+    "previous": "Previous",
+    "submit": "Submit",
+    "search": "Search",
+    "filter": "Filter",
+    "close": "Close",
+    "loading": "Loading...",
+    "error": "Error",
+    "success": "Success",
+    "confirm": "Confirm",
+    "yes": "Yes",
+    "no": "No"
+  },
+  "auth": {
+    "welcomeBack": "Welcome Back",
+    "createAccount": "Create Account",
+    "signInDetails": "Please enter your details to sign in.",
+    "joinUs": "Join us to start shipping globally.",
+    "email": "Email Address",
+    "password": "Password",
+    "fullName": "Full Name",
+    "forgotPassword": "Forgot Password?",
+    "continueAsGuest": "Continue as Guest",
+    "continueWith": "Or continue with",
+    "loggingIn": "Logging in...",
+    "creatingAccount": "Creating Account...",
+    "termsAgreement": "By logging in, you agree to our",
+    "termsOfService": "Terms of Service",
+    "privacyPolicy": "Privacy Policy",
+    "and": "&"
+  },
+  "dashboard": {
+    "title": "Dashboard",
+    "goodMorning": "Good morning",
+    "goodAfternoon": "Good afternoon",
+    "goodEvening": "Good evening",
+    "whatsHappening": "Here's what's happening with your freight today.",
+    "actionRequired": "Action Required",
+    "shipmentsRequireReview": "Shipments require documentation review before arrival.",
+    "reviewNow": "Review Now",
+    "active": "Active",
+    "quotes": "Quotes",
+    "delivered": "Delivered",
+    "quickActions": "Quick Actions",
+    "newBooking": "New Booking",
+    "trackShipment": "Track Shipment",
+    "getQuote": "Get Quote",
+    "activeShipments": "Active Shipments",
+    "viewAll": "View All",
+    "recentQuotes": "Recent Quotes",
+    "bookNow": "Book Now",
+    "expiresIn": "Expires in",
+    "onTime": "On Time",
+    "arrivingIn": "Arriving in",
+    "days": "days"
+  },
+  "booking": {
+    "title": "New Booking",
+    "selectShippingType": "Select shipping type",
+    "selectShippingDescription": "Choose the option that best fits your cargo volume and delivery requirements.",
+    "fcl": {
+      "title": "Full Container Load",
+      "short": "FCL",
+      "description": "Exclusive use of a container. Best for large shipments (over 15 CBM) or fragile goods needing security.",
+      "booking": "FCL Booking"
+    },
+    "lcl": {
+      "title": "Less than Container Load",
+      "short": "LCL",
+      "description": "Share container space with others. Cost-effective for smaller shipments.",
+      "booking": "LCL Booking"
+    },
+    "airfreight": {
+      "title": "Air Cargo",
+      "short": "Air",
+      "description": "Fastest shipping method. Ideal for urgent deliveries.",
+      "booking": "Airfreight Booking"
+    },
+    "routeDetails": "Route Details",
+    "origin": "Origin Port / City",
+    "destination": "Destination Port / City",
+    "readyDate": "Estimated Ready Date",
+    "containerType": "Container Type",
+    "quantity": "Quantity",
+    "cargoInfo": "Cargo Information",
+    "commodity": "Commodity Name",
+    "weight": "Total Weight",
+    "hsCode": {
+      "title": "HS Code",
+      "placeholder": "Auto-detected or enter manually",
+      "suggestions": "HS Code Suggestions",
+      "highConfidence": "High",
+      "mediumConfidence": "Medium",
+      "lowConfidence": "Low",
+      "noSuggestions": "No suggestions found. Please enter HS code manually.",
+      "enterMoreDetails": "Enter at least 3 characters to get HS code suggestions"
+    },
+    "hsCodeOptional": "Optional",
+    "instructions": "Special Handling Instructions",
+    "continueToRates": "Continue to Rates",
+    "step": "Step",
+    "of": "of",
+    "notSure": "Not sure which to choose? Contact Support"
+  },
+  "navigation": {
+    "home": "Home",
+    "dashboard": "Dashboard",
+    "search": "Search",
+    "schedules": "Schedules",
+    "bookings": "Bookings",
+    "messages": "Messages",
+    "more": "More",
+    "settings": "Settings",
+    "language": "Language",
+    "theme": "Theme"
+  },
+  "settings": {
+    "title": "Settings",
+    "language": "Language",
+    "theme": "Theme",
+    "notifications": "Notifications",
+    "profile": "Profile",
+    "account": "Account",
+    "privacy": "Privacy",
+    "about": "About",
+    "help": "Help & Support",
+    "logout": "Log Out",
+    "supportPhone": "Support Phone",
+    "emergencyPhone": "Emergency Line",
+    "supportEmail": "Support Email",
+    "terms": "Terms & Privacy Policy"
+  },
+  "language": {
+    "title": "Language",
+    "selectLanguage": "Select Language",
+    "searchPlaceholder": "Search languages",
+    "auto": "Auto (System)",
+    "changingLanguage": "Changing the language will restart the application to apply settings.",
+    "allLanguages": "All Languages"
+  },
+  "theme": {
+    "light": "Light Mode",
+    "dark": "Dark Mode",
+    "system": "System Default"
+  },
+  "notifications": {
+    "title": "Notifications",
+    "noNotifications": "No notifications",
+    "markAllRead": "Mark all as read"
+  },
+  "messages": {
+    "title": "Messages",
+    "noMessages": "No messages",
+    "sendMessage": "Send Message",
+    "typeMessage": "Type a message..."
+  },
+  "chat": {
+    "support": "Support",
+    "online": "Online",
+    "welcomeMessage": "Hello! How can we help you today?",
+    "autoResponse": "Thank you for your message. Our support team will get back to you shortly. For immediate assistance, please call us at +1 (251) 316-6847 or +44 7476 991927.",
+    "callUs": "Call Us",
+    "emailUs": "Email Us"
+  },
+  "profile": {
+    "title": "Profile",
+    "editProfile": "Edit Profile",
+    "name": "Name",
+    "email": "Email",
+    "phone": "Phone",
+    "company": "Company",
+    "address": "Address"
+  },
+  "errors": {
+    "generic": "Something went wrong. Please try again.",
+    "network": "Network error. Please check your connection.",
+    "unauthorized": "Unauthorized. Please log in.",
+    "notFound": "Not found.",
+    "validation": "Please check your input and try again."
+  },
+  "success": {
+    "bookingCreated": "Booking Submitted!",
+    "bookingProcessing": "Your shipment is being processed.",
+    "profileUpdated": "Profile updated successfully",
+    "settingsSaved": "Settings saved successfully"
+  },
+  "container": {
+    "types": {
+      "20ft": "20ft Standard",
+      "40ft": "40ft Standard",
+      "40ftHC": "40ft HC",
+      "capacity": "Capacity"
+    }
+  },
+  "units": {
+    "kg": "kg",
+    "lbs": "lbs",
+    "cbm": "CBM",
+    "ft": "ft"
+  },
+  "time": {
+    "today": "Today",
+    "yesterday": "Yesterday",
+    "tomorrow": "Tomorrow",
+    "daysAgo": "days ago",
+    "hoursAgo": "hours ago",
+    "minutesAgo": "minutes ago"
+  },
+  "schedules": {
+    "title": "Schedules",
+    "sea": "Sea Freight",
+    "air": "Airfreight",
+    "searchTitle": "Search Schedules",
+    "origin": "Origin",
+    "destination": "Destination",
+    "originPlaceholder": "e.g. Shanghai",
+    "destinationPlaceholder": "e.g. Los Angeles",
+    "search": "Search",
+    "departure": "Departure",
+    "arrival": "Arrival",
+    "transitTime": "Transit Time",
+    "frequency": "Frequency",
+    "days": "days",
+    "bookNow": "Book Now",
+    "noResults": "No Schedules Found",
+    "searchHint": "Search for schedules by entering origin and destination",
+    "enterOriginDestination": "Please enter both origin and destination",
+    "fetchError": "Failed to fetch schedules. Please try again.",
+    "status": {
+      "available": "Available",
+      "full": "Full",
+      "delayed": "Delayed"
+    }
+  }
+}
+

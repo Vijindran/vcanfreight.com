@@ -5,12 +5,6 @@ const nextConfig: NextConfig = {
   // Cloudflare Pages configuration handled by @cloudflare/next-on-pages
   images: {
     unoptimized: true, // Required for Cloudflare Pages
-    remotePatterns: [
-      {
-        protocol: 'https',
-        hostname: 'lh3.googleusercontent.com',
-      },
-    ],
   },
 };
 

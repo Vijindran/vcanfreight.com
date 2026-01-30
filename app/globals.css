@@ -1,0 +1,475 @@
+@import "tailwindcss";
+
+/* Enable dark mode based on class on html element */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --color-primary: #1973f0;
+  --color-background-light: #f6f7f8;
+  --color-background-dark: #101822;
+  --color-surface-dark: #1c293a;
+
+  --font-display: 'Manrope', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  --font-sans: 'Manrope', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+
+  /* Responsive breakpoints */
+  --breakpoint-sm: 640px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 1024px;
+  --breakpoint-xl: 1280px;
+  --breakpoint-2xl: 1536px;
+}
+
+/* Light mode - Default */
+:root,
+:root.light,
+html.light,
+html:not(.dark) {
+  color-scheme: light;
+  --color-background: var(--color-background-light);
+  --color-text: #0f172a;
+}
+
+/* Dark mode */
+:root.dark,
+html.dark,
+html[data-theme="dark"] {
+  color-scheme: dark;
+  --color-background: var(--color-background-dark);
+  --color-text: #ffffff;
+}
+
+/* Body styles - Base (light mode default) */
+body {
+  background-color: var(--color-background-light);
+  color: #0f172a;
+  font-family: 'Manrope', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif !important;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  min-height: 100vh;
+}
+
+/* Ensure all text uses the correct font */
+*, *::before, *::after {
+  font-family: inherit;
+}
+
+/* Dark mode - These rules MUST come after light mode and have higher specificity */
+html.dark body,
+html[data-theme="dark"] body,
+.dark body {
+  background-color: var(--color-background-dark) !important;
+  color: #ffffff !important;
+}
+
+html.dark,
+.dark {
+  background-color: var(--color-background-dark);
+  color-scheme: dark;
+}
+
+/* Force dark mode on all containers when dark class is present */
+html.dark main,
+html.dark section,
+html.dark div,
+html.dark header,
+html.dark footer,
+html.dark nav {
+  color: inherit;
+}
+
+/* Dark mode specific overrides for common elements */
+html.dark .bg-white {
+  background-color: var(--color-surface-dark) !important;
+}
+
+html.dark .bg-slate-50,
+html.dark .bg-gray-50 {
+  background-color: var(--color-background-dark) !important;
+}
+
+html.dark .text-slate-900,
+html.dark .text-gray-900 {
+  color: #ffffff !important;
+}
+
+html.dark .text-slate-700,
+html.dark .text-gray-700,
+html.dark .text-slate-600,
+html.dark .text-gray-600 {
+  color: #cbd5e1 !important;
+}
+
+html.dark .border-slate-200,
+html.dark .border-gray-200 {
+  border-color: #334155 !important;
+}
+
+/* Material Symbols sizing */
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+
+/* Ensure images are visible - DO NOT use height: auto as it conflicts with h-full on absolute images */
+img {
+  display: block !important;
+  max-width: 100%;
+  opacity: 1 !important;
+  visibility: visible !important;
+  background-color: transparent !important;
+}
+
+/* Ensure absolutely positioned images fill their container */
+img.absolute,
+.absolute img,
+img[class*="inset-"] {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover;
+}
+
+/* Protect images from inheriting background colors */
+html.dark img,
+html.light img,
+html:not(.dark) img,
+body img,
+div img {
+  background-color: transparent !important;
+  color: inherit;
+}
+
+/* Protect image containers from background-color override */
+.overflow-hidden img,
+[class*="aspect-"] img,
+.relative img,
+.absolute img {
+  background-color: transparent !important;
+}
+
+/* Ensure background-image divs work properly */
+div[style*="backgroundImage"],
+div[style*="background-image"] {
+  background-color: transparent !important;
+}
+
+/* Ensure background images are visible */
+[style*="backgroundImage"],
+[style*="background-image"],
+div[style*="backgroundImage"],
+div[style*="background-image"] {
+  background-size: cover !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  display: block !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+
+/* Fix for Cloudflare Pages images */
+.next-image-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.next-image-container img {
+  object-fit: cover;
+}
+
+/* Ensure background images load properly */
+.bg-cover {
+  background-size: cover !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+}
+
+/* Fix for background images that might not be loading */
+.bg-cover {
+  background-size: cover !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+}
+
+/* Fix Next.js Portal positioning issues - Comprehensive fix for all portal elements */
+nextjs-portal {
+  position: fixed !important;
+  width: 0 !important;
+  height: 0 !important;
+  z-index: 9999 !important;
+  pointer-events: none !important;
+  overflow: hidden !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  border: none !important;
+  display: block !important;
+}
+
+/* Fix any portal children positioning */
+nextjs-portal > * {
+  position: absolute !important;
+  top: 0 !important;
+  left: 0 !important;
+}
+
+/* Fix React portals and overlays */
+[data-portal],
+[data-nextjs-portal] {
+  position: fixed !important;
+  z-index: 9999 !important;
+}
+
+/* Allow cursor element portals to have flexible positioning */
+[data-cursor-element-id] {
+  position: fixed !important;
+  z-index: 9999 !important;
+}
+
+/* Ensure portals don't interfere with layout - all variations */
+body > nextjs-portal,
+html > nextjs-portal,
+div > nextjs-portal,
+script + nextjs-portal,
+script ~ nextjs-portal,
+nextjs-portal[style*="top"],
+nextjs-portal[style*="left"] {
+  position: fixed !important;
+  width: 0 !important;
+  height: 0 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  border: none !important;
+  overflow: hidden !important;
+}
+
+/* Allow cursor element portals to have flexible positioning */
+script > nextjs-portal[data-cursor-element-id] {
+  position: fixed !important;
+  width: 0 !important;
+  height: 0 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  border: none !important;
+  overflow: hidden !important;
+}
+
+/* Fix portal with specific style attributes - allow flexible positioning */
+nextjs-portal[style*="--nextjs-dev-tools-scale"] {
+  position: fixed !important;
+  width: 0 !important;
+  height: 0 !important;
+}
+
+/* Prevent portal from affecting document flow */
+nextjs-portal {
+  contain: layout style paint !important;
+  isolation: isolate !important;
+}
+
+/* Fade in animation for rotating messages */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Smooth transitions and animations - exclude images to prevent disappearing bug */
+*:not(img):not([style*="background"]) {
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, box-shadow, transform, filter, backdrop-filter;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+/* Images should not have opacity/visibility transitions */
+img {
+  transition: none !important;
+}
+
+/* Enhanced button hover effects */
+button, a[role="button"] {
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+button:hover, a[role="button"]:hover {
+  transform: translateY(-1px);
+}
+
+button:active, a[role="button"]:active {
+  transform: translateY(0);
+}
+
+/* Smooth card hover effects */
+.card-hover {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.card-hover:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+/* Loading spinner animation */
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-spin {
+  animation: spin 1s linear infinite;
+}
+
+/* Pulse animation for loading states */
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
+
+.animate-pulse {
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+/* Slide in from bottom animation */
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-slide-up {
+  animation: slideUp 0.4s ease-out;
+}
+
+/* Scale in animation */
+@keyframes scaleIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.animate-scale-in {
+  animation: scaleIn 0.3s ease-out;
+}
+
+/* Enhanced shadow utilities */
+.shadow-glow {
+  box-shadow: 0 0 20px rgba(25, 115, 240, 0.3);
+}
+
+.shadow-glow-hover:hover {
+  box-shadow: 0 0 30px rgba(25, 115, 240, 0.4);
+}
+
+/* Smooth scroll behavior */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Better focus styles */
+*:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+/* Glass morphism effect */
+.glass {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+.dark .glass {
+  background: rgba(16, 24, 34, 0.7);
+}
+
+/* Fix any nested portal structures */
+nextjs-portal nextjs-portal {
+  position: absolute !important;
+}
+
+/* Responsive Typography */
+@media (max-width: 639px) {
+  /* Mobile - Base styles already mobile-first */
+  html {
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 640px) {
+  /* Tablet */
+  html {
+    font-size: 17px;
+  }
+}
+
+@media (min-width: 1024px) {
+  /* Desktop */
+  html {
+    font-size: 18px;
+  }
+}
+
+/* Responsive Container Max Widths */
+.container-responsive {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+@media (min-width: 640px) {
+  .container-responsive {
+    max-width: 640px;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .container-responsive {
+    max-width: 768px;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container-responsive {
+    max-width: 1024px;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
+}
+
+@media (min-width: 1280px) {
+  .container-responsive {
+    max-width: 1280px;
+  }
+}
